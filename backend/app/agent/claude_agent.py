@@ -65,4 +65,5 @@ async def run_agent_turn(
         full_response += token
         yield token
 
-    return full_response, chunks
+    # Note: async generators can't `return` a value alongside yields.
+    # Sources/full_response reconstruction happens in chat.py from accumulated tokens.
