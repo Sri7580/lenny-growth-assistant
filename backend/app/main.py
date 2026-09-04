@@ -6,7 +6,7 @@ from fastapi.responses import JSONResponse
 
 from app.config import settings
 from app.database import init_db
-from app.api import health
+from app.api import health, sessions, chat
 
 logging.basicConfig(level=settings.log_level)
 logger = logging.getLogger("lenny-growth-assistant")
@@ -35,6 +35,8 @@ async def on_startup():
 
 
 app.include_router(health.router)
+app.include_router(sessions.router)
+app.include_router(chat.router)
 
 
 @app.get("/")
