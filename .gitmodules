@@ -1,0 +1,3 @@
+[submodule "backend/data/lennys-transcripts"]
+	path = backend/data/lennys-transcripts
+	url = https://github.com/ChatPRD/lennys-podcast-transcripts.git
