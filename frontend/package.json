@@ -11,11 +11,13 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
+    "dompurify": "^3.4.14",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@types/dompurify": "^3.0.5",
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
