@@ -34,7 +34,7 @@ async def chat(payload: ChatRequest, db: AsyncSession = Depends(get_db)):
 
     async def event_stream():
         full_response = ""
-        sources = []
+        sources = None
         try:
             agent_gen = run_agent_turn(db, payload.message, history, payload.provider)
             async for token in agent_gen:
